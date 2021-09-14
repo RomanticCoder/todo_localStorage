@@ -129,7 +129,7 @@ main {
 }
 
 .todo-list {
-  height: 60vh;
+  height: 50vh;
   overflow-y: auto;
   margin: 0;
   padding: 0;
@@ -144,10 +144,6 @@ main {
 
 .todo-list li.hidden {
   display: none;
-}
-
-.todo-list li:last-child {
-  border-bottom: none;
 }
 
 .todo-list li.editing {

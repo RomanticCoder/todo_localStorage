@@ -19,7 +19,7 @@ function App(){
     const render = ()=>{
         const template = todos.map((item,index)=>{
             return `
-            <li data-menu-id = ${index}>
+            <li data-menu-id = ${index} class=${item.isChecked ? "completed" : ""}>
                 <div class="view">
                     <input class="toggle" type="checkbox" ${item.isChecked ? 'checked = "checked"' : ""}/>
                     <label class="label">${item.title}</label>
@@ -58,9 +58,9 @@ function App(){
     }
 
     const removeMenuName = (e)=>{
-        const answer = confirm("Do you really want to delete it?");
-        if (!answer)
-            return;
+        // const answer = confirm("Do you really want to delete it?");
+        // if (!answer)
+        //     return;
         const todoId = e.target.closest("li").dataset.menuId;
         todos.splice(todoId,1);
         store.setLocalStorage(todos);
