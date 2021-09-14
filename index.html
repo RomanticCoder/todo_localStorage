@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>이벤트 - TODOS</title>
+    <title>TODOS</title>
     <link rel="stylesheet" href="css/style.css" />
     <script src="todo.js" defer></script>
   </head>
@@ -13,16 +13,16 @@
       <input
         id="new-todo-title"
         class="new-todo"
-        placeholder="할일을 추가해주세요"
+        placeholder="Enter a task"
         autofocus
       />
       <main>
         <input class="toggle-all" type="checkbox" />
         <ul id="todo-list" class="todo-list">
-          <li>
+          <!-- <li>
             <div class="view">
               <input class="toggle" type="checkbox"/>
-              <label class="label">새로운 타이틀</label>
+              <label class="label">new title</label>
               <button class="destroy"></button>
             </div>
             <input class="edit" value="새로운 타이틀" />
@@ -42,19 +42,19 @@
               <button class="destroy"></button>
             </div>
             <input class="edit" value="완료된 타이틀" />
-          </li>
+          </li> -->
         </ul>
         <div class="count-container">
-          <span class="todo-count">총 <strong>0</strong> 개</span>
+          <span class="todo-count">total: <strong>0</strong></span>
           <ul class="filters">
             <li>
-              <a class="all selected" href="/#">전체보기</a>
+              <a class="all selected" href="/#">all</a>
             </li>
             <li>
-              <a class="active" href="#active">해야할 일</a>
+              <a class="active" href="#active">active</a>
             </li>
             <li>
-              <a class="completed" href="#completed">완료한 일</a>
+              <a class="completed" href="#completed">complete</a>
             </li>
           </ul>
         </div>
